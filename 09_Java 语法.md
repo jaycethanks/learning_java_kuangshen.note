@@ -29,6 +29,61 @@ public class HelloWorld {
 }
 ```
 
+**文档注释：**
+
+JavaDoc 命令是用来生成自己API文档的
+
+```java
+package com.jayce.javaDoc;
+
+
+//这里的类文档注释是手写的
+/**
+ * @author jayce
+ * @version 1.0
+ * @since jdk1.8
+ */
+public class javaDoc {
+    String name;
+
+    
+    //函数这里的文档注释是按下`/** + enter` 后自动生成的
+    /**
+     *
+     * @param name
+     * @return
+     * @throws Exception
+     */
+    public String test(String name) throws Exception{
+        return name;
+    }
+}
+
+```
+
+文档注释能够写的所有参数如下：
+
+- `@author` 作者名
+- `@version` 版本号
+- `@since` 指明需要最早使用的jdk版本
+- `@param` 参数名
+- `@return` 返回值情况
+- `@throws` 异常抛出情况
+
+> 注释的位置在类上面，就是，类注释，在函数上面就是函数注释。 
+
+使用javaDoc命令生成文档
+
+```bash
+$ javadoc -encoding UTF-8 -charset UTF-8 javaDoc.java
+```
+
+> 
+
+
+
+
+
 **1.2 标识符** 
 
 Java 所有的组成部分都需要名字。 类名、变量名以及方法名都被称为标识符。
