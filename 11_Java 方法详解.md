@@ -179,5 +179,25 @@ args[1]:你好啊
   - 递归头：什么时候不调用自身方法。如果没有头，将陷入死循环。 
   - 递归体：什么时候需要调用自身的方法。
 
- 
+```java
+// 示例 阶乘
+public class JieChen {
+    public static void main(String[] args) {
+        int res = f(5);
+        System.out.println(res);
+    }
+    public static int f(int n){
+        if(n == 1){
+            return n;
+        }else{
+            return n*f(n-1);
+        }
+    }
+}
+
+//output 
+120
+```
+
+
 
