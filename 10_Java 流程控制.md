@@ -345,3 +345,5 @@ public class continueWithLabel {
 149 
 ```
 
+> <span style="color:red">break 用于结束整个循环， continue 结束当前次循环，进入下一次循环</span>
+
