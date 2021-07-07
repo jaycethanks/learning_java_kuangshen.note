@@ -112,7 +112,7 @@ public class Methods {
 > 
 > public class Methods {
 >     public static void main(String[] args) {
->         UnStaticMethodExg.unStaticMethod();//编辑器直接红色标红错误：Non-static method 'unStaticMethod()' cannot be referenced from a static context
+>          .unStaticMethod();//编辑器直接红色标红错误：Non-static method 'unStaticMethod()' cannot be referenced from a static context
 >         StaticMethodExg.staticMethod();//可调用
 >     }
 > }
